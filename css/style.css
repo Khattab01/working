@@ -99,6 +99,8 @@ nav .button1:hover {
   align-self: center;
   bottom: 10rem;
   right: 3rem;
+  z-index: 2;
+
 }
 .c1 p {
   font-size: 1.6rem;
@@ -128,6 +130,7 @@ nav .button1:hover {
   position: relative;
   left: 30%;
   transform: translateX(-60%);
+  z-index: 1;
 }
 
 .shape {
@@ -146,8 +149,56 @@ nav .button1:hover {
   transition: 0.4s;
 }
 .c2:hover .man {
-  transform: translateX(1.5rem);
+  transform: translateX(0.8rem);
 }
 .c2:hover .shape {
-  transform: translateX(-1.5rem);
+  transform: translateX(-0.8rem);
+}
+nav #barbutton {
+  display: block;
+  scale: 0.6;
+  z-index: 200;
+}
+.responsive{
+  display:flex;
+  z-index: 200;
+  position: absolute;
+  height: 100vh;
+  transition: 0.5;
+  width: 100%;
+  top:3.5rem;
+  background:rgba(28, 10, 0,0.7);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  margin-right:-100%;
+  transition: 1s;
+}
+.visible{
+
+margin-right: 0;
+
+}
+.responsive h1{
+  display: none;
+}
+.responsive ul{
+  position: relative;
+  margin-bottom: 15rem;
+}
+.responsive ul li{
+  list-style: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+.responsive ul li a{
+  color: white;
+  text-decoration: none;
+font-size: 2rem;
+transition: 0.4s;
+}
+.responsive ul li a:hover , .responsive ul li .HomeR{
+  color: #cc9544;
+  border-bottom: 3px solid var(--hovercolor);
+  
 }

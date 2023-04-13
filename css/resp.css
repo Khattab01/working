@@ -17,11 +17,11 @@
     }
     .man, .shape{
         width: 20rem;
-        right: -5rem;
-        top:25rem;
+        right: -6rem;
+        top:17rem;
     }
     .shape{
-        top:30rem;
+        top:25rem;
         width:20rem;
     }
     .c1{
@@ -32,11 +32,21 @@
       position: absolute;
     }
     .container1 .c1 p,.container1 .c1 span{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     .container1 .c1 .button2{
       font-size: 1.1rem;
       padding: 3px 1.5rem;
+  }
+  nav #barbutton{
+    display: block;
+    scale: 0.6;
+  }
+  .c2:hover .man {
+    transform: translateX(0.8rem);
+  }
+  .c2:hover .shape {
+    transform: translateX(-0.8rem);
   }
   }
 
@@ -84,9 +94,12 @@
         padding: 3px 1.5rem;
     }
     .man, .shape{
-      width: 30rem;
+      width: 25rem;
       right: -7rem;
-      top:13rem;
+      top:11rem;
+  }
+  .shape{
+    top:20rem;
   }
     .c2{
       position: block;
@@ -94,6 +107,13 @@
     .c1{
       width: 50%;
     }
+    nav #barbutton{
+      display: none;
+    }
+    .responsive{
+      display: none;
+    }
+  
   }
 
 
@@ -133,15 +153,15 @@
     }
 
     .man{
-        width: 35rem;
+        width: 30rem;
         top:5rem;
         position: absolute;
-        right: -10%;
+        right: -20%;
     }
 
     .shape{
         top:20rem;
-        width:30rem;
+        width:25rem;
         right: -10%;
         position: absolute;
 
@@ -155,6 +175,12 @@
     .c1{
       width: 50%;
 
+    }
+    nav #barbutton{
+      display: none;
+    }
+    .responsive{
+      display: none;
     }
   }
 
@@ -178,8 +204,10 @@
       position: absolute;
 
   }
-  nav #icon{
+  nav #barbutton{
     display: none;
-    color: black;
+  }
+  .responsive{
+    display: none;
   }
   }
